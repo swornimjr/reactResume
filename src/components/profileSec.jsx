@@ -58,6 +58,74 @@ const ProfileSection = () => {
           </div>
         </div>
       </div>
+      <div>
+        <h1>Showcasing my work</h1>
+        <div>
+          <div class="showcase-container">
+            <h2 class="showcase-title">Showcase of Projects</h2>
+            <div class="project-grid">
+              <a href="https://" class="project-card news-app" target="_blank">
+                <div class="project-info">
+                  <h3>Reebok Web Application</h3>
+                  <p>
+                    A React-based web application for Reebok, featuring a
+                    dynamic product catalog, API-powered product listings, and a
+                    sleek UI to enhance the shopping experience.
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="https://"
+                class="project-card contact-manager"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Black Friday Web</h3>
+                  <p>
+                    A promotional web platform for Black Friday sales, offering
+                    real-time product deals, discount tracking, and a seamless
+                    shopping interface.
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="https://"
+                class="project-card expense-tracker"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Facebook User Interface using CSS</h3>
+                  <p>
+                    A front-end project replicating Facebook's UI using HTML and
+                    CSS, designed to showcase modern styling techniques and
+                    responsive layouts.
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="https://"
+                class="project-card calc-tracker"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Calculator  Interface using JS</h3>
+                  <p>
+                    A front-end project  using HTML and
+                    CSS, designed to showcase modern styling techniques and
+                    responsive layouts.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <button class="show-more-btn" onclick="showMoreProjects()">
+              Show More
+            </button>
+          </div>
+        </div>
+      </div>
 
       <section class="under-construction">
         <h2>🚧 Under Construction 🚧</h2>
