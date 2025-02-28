@@ -1,0 +1,178 @@
+.topBarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rebeccapurple;
+  background-image: url("./assets/bg.jpg");
+
+  background-size: cover;
+  background-clip: content-box;
+  border-top: white 0.3px solid;
+  border-bottom: white 0.5px solid;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.paddingContainer {
+  padding-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.nameTag {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.circleImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-image: url("./assets/profilepic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bioContainer {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 20px;
+  border-bottom: white 0.5px solid;
+}
+
+.biofont {
+  font-size: 30px;
+  font-family: monospace;
+  padding-bottom: 30px;
+}
+.smallBio {
+  color: grey;
+  font-size: 15px;
+  font-family: monospace;
+}
+
+.hireBtn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #95bad2; /* Change to your preferred color */
+  color: black;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.hireBtn2 {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2b2d2e; /* Change to your preferred color */
+  color: whitesmoke;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+  margin-right: 20px;
+}
+.techlogos-container {
+  overflow: hidden; /* Prevents the logos from going out of the container */
+  width: 100%;
+}
+
+.techlogos {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 50px;
+  display: flex;
+  gap: 50px;
+  animation: moveLeft 70s linear infinite; /* 10s is the duration of the animation */
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0); /* Start at the initial position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move all icons to the left */
+  }
+}
+
+.techContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  border-bottom: 0.2px solid white;
+}
+
+.profileContainer {
+  margin-top: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 30px;
+}
+
+.profilePicrure {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background-image: url("./assets/profilepic.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pos {
+  position: absolute;
+  right: 170px;
+}
+.profilet1 {
+  font-size: 30px;
+  font-family: monospace;
+  text-align: center;
+}
+
+.profilet2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.frontendCard {
+  padding: 13px;
+  border-radius: 10px;
+  width: 290px;
+  background-color: #2b2d2e; /* Change to your preferred color */
+}
+
+.font {
+  color: whitesmoke;
+}
+
+.cardsFlex {
+  display: flex;
+  gap: 40px;
+}
+.logoFlex {
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+}
