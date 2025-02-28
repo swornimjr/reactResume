@@ -58,6 +58,12 @@ const ProfileSection = () => {
           </div>
         </div>
       </div>
+
+      <section class="under-construction">
+        <h2>🚧 Under Construction 🚧</h2>
+        <p>Working on rest of the section. Stay tuned for updates!</p>
+        <div class="loader"></div>
+      </section>
     </div>
   );
 };

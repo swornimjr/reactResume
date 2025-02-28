@@ -6,7 +6,7 @@ const TopBar = () => {
           <div className="circleImage"></div>
           <div>
             Swornim Maharjan <br />
-            <div>Available for work</div>
+            <div className="availableText">- Available for work</div>
           </div>
         </div>
 
