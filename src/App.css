@@ -321,6 +321,85 @@ body {
   background-image: url("./assets/cafehub.png");
 }
 
+.graphic-design-section {
+  margin: 60px 50px;
+  border-top: 0.2px solid white;
+  padding-top: 40px;
+}
+
+.graphic-design-subtitle {
+  color: grey;
+  font-size: 15px;
+  font-family: monospace;
+  margin-bottom: 30px;
+}
+
+.graphic-design-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.graphic-design-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.graphic-design-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.graphic-design-card:hover img {
+  transform: scale(1.05);
+}
+
+.graphic-design-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  padding: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.graphic-design-card:hover .graphic-design-overlay {
+  opacity: 1;
+}
+
+.graphic-design-overlay span {
+  color: white;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.graphic-design-pdf {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.pdf-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: #95bad2;
+  color: black;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.pdf-btn:hover {
+  background-color: #7aa3bf;
+}
+
 .show-more-btn {
   background-color: #97b3d2;
   color: white;

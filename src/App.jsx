@@ -6,6 +6,7 @@ import TopBar from "./components/topBar";
 import Bio from "./components/bio";
 import TectLogo from "./components/techLogo";
 import ProfileSection from "./components/profileSec";
+import GraphicDesign from "./components/graphicDesign";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,6 +17,7 @@ function App() {
       <Bio />
       <TectLogo />
       <ProfileSection />
+      <GraphicDesign />
     </>
   );
 }
