@@ -1,3 +1,4 @@
+import { useState } from "react";
 import design1 from "../assets/design1.png";
 import design2 from "../assets/design2.png";
 import design3 from "../assets/design3.png";
@@ -27,6 +28,8 @@ const designs = [
 ];
 
 const GraphicDesign = () => {
+  const [selected, setSelected] = useState(null);
+
   return (
     <div className="graphic-design-section">
       <h1>Graphic Design</h1>
@@ -35,7 +38,7 @@ const GraphicDesign = () => {
       </p>
       <div className="graphic-design-grid">
         {designs.map((d, i) => (
-          <div className="graphic-design-card" key={i}>
+          <div className="graphic-design-card" key={i} onClick={() => setSelected(d)}>
             <img src={d.src} alt={d.label} />
             <div className="graphic-design-overlay">
               <span>{d.label}</span>
@@ -48,6 +51,16 @@ const GraphicDesign = () => {
           View Full Work Sample PDF
         </a>
       </div>
+
+      {selected && (
+        <div className="lightbox" onClick={() => setSelected(null)}>
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <button className="lightbox-close" onClick={() => setSelected(null)}>✕</button>
+            <img src={selected.src} alt={selected.label} />
+            <p className="lightbox-label">{selected.label}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
