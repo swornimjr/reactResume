@@ -12,8 +12,8 @@ const ProfileSection = () => {
         ideas into reality and delivering exceptional user experiences.
       </div>
       <div>
-        <HireButton text="Download resume" />
-        <HireButton2 text="Browse my work" />
+        <HireButton text="Download resume" href="/swornimWorkSample.pdf" />
+        <HireButton2 text="Browse my work" href="#projects" />
       </div>
       <div className="cardsFlex">
         {/* fontend */}
@@ -64,6 +64,32 @@ const ProfileSection = () => {
           <div class="showcase-container">
             <h2 class="showcase-title">Showcase of Projects</h2>
             <div class="project-grid">
+              <a
+                href="https://kyoudaihostel.com/"
+                class="project-card kyoudai-hostel"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Kyoudai Hostel</h3>
+                  <p>
+                    A full-stack hostel management web application built to
+                    streamline bookings and hostel operations.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://cafehubs.vercel.app/"
+                class="project-card cafe-hub"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Cafe Hub</h3>
+                  <p>
+                    A MERN stack cafe management app featuring authentication,
+                    staff roster management, and stock tracking.
+                  </p>
+                </div>
+              </a>
               <a href="https://" class="project-card news-app" target="_blank">
                 <div class="project-info">
                   <h3>Reebok Web Application</h3>
@@ -111,39 +137,10 @@ const ProfileSection = () => {
                 target="_blank"
               >
                 <div class="project-info">
-                  <h3>Calculator  Interface using JS</h3>
+                  <h3>Calculator Interface using JS</h3>
                   <p>
-                    A front-end project  using HTML and
-                    CSS, designed to showcase modern styling techniques and
-                    responsive layouts.
-                  </p>
-                </div>
-              </a>
-
-              <a
-                href="https://kyoudaihostel.com/"
-                class="project-card kyoudai-hostel"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Kyoudai Hostel</h3>
-                  <p>
-                    A full-stack hostel management web application built to
-                    streamline bookings and hostel operations.
-                  </p>
-                </div>
-              </a>
-
-              <a
-                href="https://cafehubs.vercel.app/"
-                class="project-card cafe-hub"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Cafe Hub</h3>
-                  <p>
-                    A MERN stack cafe management app featuring authentication,
-                    staff roster management, and stock tracking.
+                    A front-end project using HTML and CSS, designed to showcase
+                    modern styling techniques and responsive layouts.
                   </p>
                 </div>
               </a>
@@ -154,12 +151,6 @@ const ProfileSection = () => {
           </div>
         </div>
       </div>
-
-      <section class="under-construction">
-        <h2>🚧 Under Construction 🚧</h2>
-        <p>Working on rest of the section. Stay tuned for updates!</p>
-        <div class="loader"></div>
-      </section>
     </div>
   );
 };

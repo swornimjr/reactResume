@@ -11,24 +11,25 @@ const TopBar = () => {
         </div>
 
         <div className="iconsContainer">
-          <div>
-            <i class="fa-solid fa-user"></i>
-          </div>
-          <div>
-            <i class="fa-solid fa-id-badge"></i>
-          </div>
-          <div>
-            <i class="fa-solid fa-briefcase"></i>
-          </div>
-          <div>
-            <i class="fa-solid fa-folder"></i>
-          </div>
-          <div>
-            <i class="fa-solid fa-phone"></i>
-          </div>
+          <a href="#about" className="navIcon" title="About">
+            <i className="fa-solid fa-user"></i>
+          </a>
+          <a href="#skills" className="navIcon" title="Skills">
+            <i className="fa-solid fa-id-badge"></i>
+          </a>
+          <a href="#projects" className="navIcon" title="Projects">
+            <i className="fa-solid fa-briefcase"></i>
+          </a>
+          <a href="#design" className="navIcon" title="Design">
+            <i className="fa-solid fa-folder"></i>
+          </a>
+          <a href="mailto:swornimaus@gmail.com" className="navIcon" title="Contact">
+            <i className="fa-solid fa-phone"></i>
+          </a>
         </div>
       </div>
     </div>
   );
 };
+
 export default TopBar;

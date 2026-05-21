@@ -7,12 +7,12 @@ const Bio = () => {
         applications. 🚀
       </div>
       <div className="smallBio">
-        Driven by curiosity and passion, I’m constantly learning, coding, and
+        Driven by curiosity and passion, I'm constantly learning, coding, and
         refining my skills to build innovative and impactful web solutions
       </div>
       <div>
-        <div className="hireBtn">Hire Me</div>
-        <div className="hireBtn2">Discover my journey</div>
+        <a href="mailto:swornimaus@gmail.com" className="hireBtn">Hire Me</a>
+        <a href="#projects" className="hireBtn2">Discover my journey</a>
       </div>
     </div>
   );

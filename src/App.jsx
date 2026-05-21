@@ -1,6 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import TopBar from "./components/topBar";
 import Bio from "./components/bio";
@@ -9,15 +6,13 @@ import ProfileSection from "./components/profileSec";
 import GraphicDesign from "./components/graphicDesign";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <TopBar />
-      <Bio />
-      <TectLogo />
-      <ProfileSection />
-      <GraphicDesign />
+      <section id="about"><Bio /></section>
+      <section id="skills"><TectLogo /></section>
+      <section id="projects"><ProfileSection /></section>
+      <section id="design"><GraphicDesign /></section>
     </>
   );
 }
