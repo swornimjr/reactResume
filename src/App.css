@@ -313,6 +313,14 @@ body {
   background-image: url("./assets/calc.JPG");
 }
 
+.kyoudai-hostel {
+  background-image: url("./assets/kyoudaihostel.png");
+}
+
+.cafe-hub {
+  background-image: url("./assets/cafehub.png");
+}
+
 .show-more-btn {
   background-color: #97b3d2;
   color: white;

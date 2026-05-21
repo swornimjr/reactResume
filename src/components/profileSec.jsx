@@ -119,6 +119,34 @@ const ProfileSection = () => {
                   </p>
                 </div>
               </a>
+
+              <a
+                href="https://kyoudaihostel.com/"
+                class="project-card kyoudai-hostel"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Kyoudai Hostel</h3>
+                  <p>
+                    A full-stack hostel management web application built to
+                    streamline bookings and hostel operations.
+                  </p>
+                </div>
+              </a>
+
+              <a
+                href="https://cafehubs.vercel.app/"
+                class="project-card cafe-hub"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Cafe Hub</h3>
+                  <p>
+                    A MERN stack cafe management app featuring authentication,
+                    staff roster management, and stock tracking.
+                  </p>
+                </div>
+              </a>
             </div>
             <button class="show-more-btn" onclick="showMoreProjects()">
               Show More
