@@ -90,6 +90,19 @@ const ProfileSection = () => {
                   </p>
                 </div>
               </a>
+              <a
+                href="https://gilded-pixie-1986f9.netlify.app"
+                class="project-card khai-ko-imposter"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Khai Ko Imposter?</h3>
+                  <p>
+                    A Nepali social deduction party game built with React Native
+                    and Expo — pass-and-play on one phone, inspired by Among Us.
+                  </p>
+                </div>
+              </a>
               <a href="https://" class="project-card news-app" target="_blank">
                 <div class="project-info">
                   <h3>Reebok Web Application</h3>
