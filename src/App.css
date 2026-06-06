@@ -334,7 +334,7 @@ body {
 }
 
 .hamro-kirtipur {
-  background: linear-gradient(135deg, #1A7A5E 0%, #12604A 100%);
+  background-image: url("./assets/hamro-kirtipur.png");
 }
 
 .khai-ko-imposter {
