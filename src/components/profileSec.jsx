@@ -91,6 +91,18 @@ const ProfileSection = () => {
                 </div>
               </a>
               <a
+                href="https://hamro-kirtipur.vercel.app/"
+                class="project-card hamro-kirtipur"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Hamro Kirtipur</h3>
+                  <p>
+                    A MERN stack community directory for Kirtipur, Nepal — 11 wards, interactive map, business listings, and emergency contacts.
+                  </p>
+                </div>
+              </a>
+              <a
                 href="https://gilded-pixie-1986f9.netlify.app"
                 class="project-card khai-ko-imposter"
                 target="_blank"

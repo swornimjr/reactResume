@@ -333,6 +333,10 @@ body {
   background-image: url("./assets/cafehub.png");
 }
 
+.hamro-kirtipur {
+  background: linear-gradient(135deg, #1A7A5E 0%, #12604A 100%);
+}
+
 .khai-ko-imposter {
   background-image: url("./assets/khai-ko-imposter.png");
   background-color: #0D0D1A;
