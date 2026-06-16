@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const TopBar = () => {
   return (
     <div className="paddingContainer">
@@ -10,23 +12,12 @@ const TopBar = () => {
           </div>
         </div>
 
-        <div className="iconsContainer">
-          <a href="#about" className="navIcon" title="About">
-            <i className="fa-solid fa-user"></i>
-          </a>
-          <a href="#skills" className="navIcon" title="Skills">
-            <i className="fa-solid fa-id-badge"></i>
-          </a>
-          <a href="#projects" className="navIcon" title="Projects">
-            <i className="fa-solid fa-briefcase"></i>
-          </a>
-          <a href="#design" className="navIcon" title="Design">
-            <i className="fa-solid fa-folder"></i>
-          </a>
-          <a href="mailto:swornimaus@gmail.com" className="navIcon" title="Contact">
-            <i className="fa-solid fa-phone"></i>
-          </a>
-        </div>
+        <nav className="iconsContainer">
+          <Link to="/story" className="navIcon">My Story</Link>
+          <a href="/#projects" className="navIcon">Projects</a>
+          <Link to="/design" className="navIcon">Design</Link>
+          <a href="mailto:swornimaus@gmail.com" className="navIcon">Contact</a>
+        </nav>
       </div>
     </div>
   );

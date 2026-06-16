@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HireButton, { HireButton2 } from "./button";
 
 const ProfileSection = () => {
@@ -14,6 +15,7 @@ const ProfileSection = () => {
       <div>
         <HireButton text="Download resume" href="/swornimWorkSample.pdf" />
         <HireButton2 text="Browse my work" href="#projects" />
+        <Link to="/story" className="hireBtn2">My Story →</Link>
       </div>
       <div className="cardsFlex">
         {/* fontend */}

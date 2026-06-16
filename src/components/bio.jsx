@@ -12,7 +12,6 @@ const Bio = () => {
       </div>
       <div>
         <a href="mailto:swornimaus@gmail.com" className="hireBtn">Hire Me</a>
-        <a href="#projects" className="hireBtn2">Discover my journey</a>
       </div>
     </div>
   );

@@ -42,6 +42,7 @@ body {
   color: #95bad2;
 }
 
+
 .nameTag {
   display: flex;
   align-items: center;
@@ -480,6 +481,387 @@ body {
   background-color: #0056b3;
 }
 
+/* ═══════════════════════════════════════════════════════════
+   STORY PAGE
+   ═══════════════════════════════════════════════════════════ */
+
+/* Hero */
+.storyHero {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: white 0.5px solid;
+}
+
+.storyHeroLabel {
+  color: grey;
+  font-size: 15px;
+  font-family: monospace;
+  margin-bottom: 12px;
+}
+
+.storyHeroName {
+  font-size: 48px;
+  font-family: monospace;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.storyHeroTagline {
+  font-size: 22px;
+  color: #95bad2;
+  margin-bottom: 20px;
+  font-family: monospace;
+}
+
+.storyHeroMeta {
+  color: grey;
+  font-size: 14px;
+  font-family: monospace;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.skillPillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.skillPill {
+  background-color: #2b2d2e;
+  color: #95bad2;
+  font-size: 13px;
+  font-family: monospace;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(149, 186, 210, 0.4);
+}
+
+/* Narrative */
+.storyNarrative {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: white 0.5px solid;
+}
+
+.storyChapterLabel {
+  font-size: 11px;
+  font-family: monospace;
+  color: #95bad2;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.storyChapter {
+  margin-bottom: 56px;
+}
+
+.storyChapter:last-child {
+  margin-bottom: 0;
+}
+
+.storyChapterTitle {
+  font-size: 24px;
+  font-family: monospace;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.storyText {
+  font-size: 16px;
+  color: #bbb;
+  line-height: 1.85;
+  max-width: 720px;
+  margin-bottom: 20px;
+}
+
+.pullQuote {
+  border-left: 3px solid #95bad2;
+  padding: 18px 28px;
+  margin: 32px 0;
+  background-color: #111;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  line-height: 1.55;
+  max-width: 700px;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Projects */
+.storyProjects {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: white 0.5px solid;
+}
+
+.storyProjectsTitle {
+  font-size: 30px;
+  font-family: monospace;
+  margin-bottom: 10px;
+}
+
+.storyProjectsSubtitle {
+  color: grey;
+  font-size: 15px;
+  font-family: monospace;
+  margin-bottom: 40px;
+}
+
+.storyProjectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.storyProjectCard {
+  background-color: #2b2d2e;
+  border-radius: 10px;
+  padding: 28px;
+  border-left: 3px solid #95bad2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.storyProjectCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(149, 186, 210, 0.1);
+}
+
+.storyProjectBuiltFor {
+  font-size: 11px;
+  font-family: monospace;
+  color: #95bad2;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.storyProjectName {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  font-family: monospace;
+}
+
+.storyProjectWhy {
+  font-size: 13px;
+  color: grey;
+  font-family: monospace;
+  font-style: italic;
+}
+
+.storyProjectText {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.75;
+  flex: 1;
+}
+
+.storyProjectStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.stackPill {
+  background-color: #1c1c1c;
+  color: #888;
+  font-size: 11px;
+  font-family: monospace;
+  padding: 3px 9px;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+.storyProjectLink {
+  display: inline-block;
+  padding: 9px 18px;
+  background-color: #95bad2;
+  color: black;
+  font-size: 13px;
+  font-family: monospace;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.storyProjectLink:hover {
+  background-color: #7aa3bf;
+}
+
+/* AI Section */
+.storyAIWrapper {
+  border-bottom: white 0.5px solid;
+  padding: 60px 50px;
+}
+
+.storyAIInner {
+  background-color: #07070f;
+  border: 1px solid rgba(149, 186, 210, 0.25);
+  border-radius: 12px;
+  padding: 48px;
+}
+
+.storyAILabel {
+  font-size: 11px;
+  font-family: monospace;
+  color: #95bad2;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.storyAITitle {
+  font-size: 30px;
+  font-family: monospace;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.storyAIText {
+  font-size: 16px;
+  color: #bbb;
+  line-height: 1.85;
+  max-width: 700px;
+  margin-bottom: 18px;
+}
+
+.storyAIPullQuote {
+  background-color: #0e0e1c;
+}
+
+/* Closing */
+.storyClosing {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.storyClosingText {
+  font-size: 20px;
+  color: #bbb;
+  line-height: 1.85;
+  max-width: 640px;
+  margin: 0 auto 24px;
+  font-style: italic;
+}
+
+.storyClosingSignature {
+  font-size: 14px;
+  color: grey;
+  font-family: monospace;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════════════ */
+
+.footerContainer {
+  border-top: white 0.5px solid;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding-bottom: 30px;
+  border-bottom: 0.5px solid #333;
+  flex-wrap: wrap;
+}
+
+.footerName {
+  font-size: 18px;
+  font-family: monospace;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.footerTagline {
+  font-size: 13px;
+  color: grey;
+  font-family: monospace;
+  max-width: 220px;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerLink {
+  color: grey;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: monospace;
+  transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+  color: #95bad2;
+}
+
+.footerContactLabel {
+  font-size: 12px;
+  font-family: monospace;
+  color: #95bad2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footerEmail {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: monospace;
+  transition: color 0.2s ease;
+}
+
+.footerEmail:hover {
+  color: #95bad2;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footerCopy {
+  font-size: 12px;
+  color: #555;
+  font-family: monospace;
+}
+
+.footerMade {
+  font-size: 12px;
+  color: #555;
+  font-family: monospace;
+}
+
 /* ── Tablet (≤ 1200px) ───────────────────────────────────── */
 @media (max-width: 1200px) {
   body {
@@ -586,5 +968,71 @@ body {
 
   .project-card {
     height: 180px;
+  }
+
+  /* Footer mobile */
+  .footerContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .footerTop {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Story page mobile */
+  .storyHero,
+  .storyNarrative,
+  .storyProjects,
+  .storyClosing {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .storyHeroName {
+    font-size: 30px;
+  }
+
+  .storyHeroTagline {
+    font-size: 17px;
+  }
+
+  .storyAIWrapper {
+    padding: 30px 10px;
+  }
+
+  .storyAIInner {
+    padding: 28px 20px;
+  }
+
+  .storyAITitle {
+    font-size: 22px;
+  }
+
+  .storyChapterTitle {
+    font-size: 20px;
+  }
+
+  .pullQuote {
+    font-size: 17px;
+    padding: 14px 18px;
+  }
+
+  .storyProjectGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .storyProjectsTitle {
+    font-size: 22px;
+  }
+
+  .storyClosingText {
+    font-size: 17px;
   }
 }
