@@ -117,6 +117,21 @@ const ProfileSection = () => {
                   </p>
                 </div>
               </a>
+              <a
+                href="https://apple-animation-8zh8.vercel.app/"
+                class="project-card apple-animation"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Apple Animation</h3>
+                  <p>
+                    A visually stunning Apple-inspired animation project built
+                    with modern web technologies, featuring smooth transitions
+                    and interactive UI elements.
+                  </p>
+                </div>
+              </a>
+
               <a href="https://" class="project-card news-app" target="_blank">
                 <div class="project-info">
                   <h3>Reebok Web Application</h3>
