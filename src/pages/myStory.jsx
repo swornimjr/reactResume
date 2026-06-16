@@ -27,7 +27,7 @@ const projects = [
     story:
       "At home we use a pressure cooker for dal and meat. Every time my partner made something she'd ask me to turn off the gas after 7 whistles. I built an app that listens through the microphone, counts the whistles automatically, and sounds an alarm after the number you set. She has not had to ask me since.",
     stack: ["React", "Web Audio API"],
-    url: null,
+    url: "https://pressure-cooker-whistle.vercel.app/",
   },
   {
     builtFor: "My Friends",

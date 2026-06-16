@@ -118,6 +118,19 @@ const ProfileSection = () => {
                 </div>
               </a>
               <a
+                href="https://pressure-cooker-whistle.vercel.app/"
+                class="project-card whistle-counter"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Cooker Whistle</h3>
+                  <p>
+                    A PWA that listens through the mic, counts pressure cooker
+                    whistles automatically, and sounds an alarm when done.
+                  </p>
+                </div>
+              </a>
+              <a
                 href="https://apple-animation-8zh8.vercel.app/"
                 class="project-card apple-animation"
                 target="_blank"

@@ -349,6 +349,12 @@ body {
   background-position: center top;
 }
 
+.whistle-counter {
+  background-image: url("./assets/whistle-counter.png");
+  background-color: #16213e;
+  background-position: center top;
+}
+
 .graphic-design-section {
   margin: 60px 50px;
   padding-top: 40px;
