@@ -56,6 +56,15 @@ const projects = [
     stack: ["React", "Web Audio API", "MediaRecorder API", "IndexedDB"],
     url: null,
   },
+  {
+    builtFor: "A Challenge I Set Myself",
+    name: "Apple Animation",
+    why: "I was at JB Hi-Fi and saw a MacBook display running Apple's animation. I had to recreate it.",
+    story:
+      "During my bootcamp we had an assignment to use pure CSS animation. I was walking through JB Hi-Fi one day and stopped at the MacBook display. Apple had this incredibly smooth, fluid animation running on the screen — the kind that makes you stare. I stood there for a moment and thought: I want to build that. I went home and rebuilt it using nothing but pure CSS. No libraries, no JavaScript animations. Just CSS. It was one of the most satisfying things I made during the bootcamp.",
+    stack: ["HTML", "CSS", "Pure CSS Animation"],
+    url: "https://apple-animation-8zh8.vercel.app/",
+  },
 ];
 
 const MyStory = () => {
