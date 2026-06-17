@@ -93,6 +93,18 @@ const ProfileSection = () => {
                 </div>
               </a>
               <a
+                href="https://aqi-a0eyukdil-swornims-projects-64c7c01e.vercel.app/"
+                class="project-card aquascape-inspire"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>AquaScape Inspire</h3>
+                  <p>
+                    A Pinterest-style community platform for aquascaping hobbyists — share tanks, discover styles, and connect with fellow aquascapers.
+                  </p>
+                </div>
+              </a>
+              <a
                 href="https://hamro-kirtipur.vercel.app/"
                 class="project-card hamro-kirtipur"
                 target="_blank"
