@@ -39,6 +39,15 @@ const projects = [
     url: "https://gilded-pixie-1986f9.netlify.app",
   },
   {
+    builtFor: "My Hobby",
+    name: "AquaScape Inspire",
+    why: "I wanted a dedicated space for aquascapers — not just another Facebook group.",
+    story:
+      "Aquascaping is one of my favourite hobbies. In Australia I am part of several Facebook groups and the community is incredibly warm — beginners and pros posting their tanks, sharing tips, helping each other troubleshoot. But everything lives scattered across Facebook. I wanted to build a proper platform just for aquascapers — somewhere to post your scape, follow other creators, save inspiration, and ask for help. It is Pinterest-style, MERN stack, with Cloudinary image hosting and a dark aquarium aesthetic. When it is complete, my plan is to buy a proper domain and share it directly into those Facebook groups and ask them to give it a try.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Cloudinary", "Tailwind CSS"],
+    url: "https://aqi-a0eyukdil-swornims-projects-64c7c01e.vercel.app/",
+  },
+  {
     builtFor: "My Community",
     name: "Hamro Kirtipur",
     why: "My hometown in Nepal had no digital directory.",
@@ -173,6 +182,19 @@ const MyStory = () => {
             digital directory, so I built one. I play guitar and wanted to layer
             recordings into soundscapes, so I built a studio for that too.
           </p>
+        </div>
+
+        <div className="storyChapter">
+          <div className="storyChapterTitle">Building for a Community I Love</div>
+          <p className="storyText">
+            Aquascaping is one of my favourite hobbies. In Australia I am part of several Facebook groups full of hobbyists — beginners and pros posting their tanks, sharing tips, helping each other troubleshoot everything from plant deficiencies to fish compatibility. The community is incredibly warm and active.
+          </p>
+          <p className="storyText">
+            But everything lives scattered across Facebook. I wanted to build a proper home just for aquascapers — a platform where people can post their scapes, follow other creators, save inspiration, and ask for help. Pinterest-style, built on the MERN stack, with a dark aquarium aesthetic that feels like you are actually looking into a tank.
+          </p>
+          <blockquote className="pullQuote">
+            "When it is complete, my plan is to buy a proper domain and share it directly into those Facebook groups and ask them to give it a try."
+          </blockquote>
         </div>
 
         <div className="storyChapter">
