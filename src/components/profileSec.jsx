@@ -9,10 +9,10 @@ import kirtipur from "../assets/hamro-kirtipur.png";
 import khaiKoImg from "../assets/khai-ko-imposter.png";
 import whistleImg from "../assets/whistle-counter.png";
 import appleImg from "../assets/apple-animation.png";
-import reebokImg from "../assets/rebok.JPG";
-import blackImg from "../assets/black.JPG";
-import fbImg from "../assets/fb.JPG";
-import calcImg from "../assets/calc.JPG";
+import reebokImg from "../assets/rebok.jpg";
+import blackImg from "../assets/black.jpg";
+import fbImg from "../assets/fb.jpg";
+import calcImg from "../assets/calc.jpg";
 
 const projects = [
   {
