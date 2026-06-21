@@ -93,7 +93,7 @@ const ProfileSection = () => {
                 </div>
               </a>
               <a
-                href="https://aqi-a0eyukdil-swornims-projects-64c7c01e.vercel.app/"
+                href="https://aqi-orpin-three.vercel.app/"
                 class="project-card aquascape-inspire"
                 target="_blank"
               >
