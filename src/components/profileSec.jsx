@@ -1,224 +1,289 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import HireButton, { HireButton2 } from "./button";
+import ScrollTwirl from "./ScrollTwirl";
+import profilePic from "../assets/profilepic.png";
+import kyoudaiImg from "../assets/kyoudaihostel.png";
+import cafeHubImg from "../assets/cafehub.png";
+import aquascapeImg from "../assets/aquascape-inspire.png";
+import kirtipur from "../assets/hamro-kirtipur.png";
+import khaiKoImg from "../assets/khai-ko-imposter.png";
+import whistleImg from "../assets/whistle-counter.png";
+import appleImg from "../assets/apple-animation.png";
+import reebokImg from "../assets/rebok.JPG";
+import blackImg from "../assets/black.JPG";
+import fbImg from "../assets/fb.JPG";
+import calcImg from "../assets/calc.JPG";
+
+const projects = [
+  {
+    id: "kyoudai",
+    title: "Kyoudai Hostel",
+    year: "2023",
+    description:
+      "A full-stack hostel management web application built to streamline bookings, visitor logs, and complex hostel operations with real-time updates.",
+    tags: ["React", "Node.js", "MongoDB"],
+    href: "https://kyoudaihostel.com/",
+    img: kyoudaiImg,
+  },
+  {
+    id: "cafehub",
+    title: "Cafe Hub",
+    year: "2023",
+    description:
+      "A MERN stack cafe management app featuring robust authentication, automated staff roster management, and precision inventory tracking.",
+    tags: ["Express", "MERN", "Redux"],
+    href: "https://cafehubs.vercel.app/",
+    img: cafeHubImg,
+  },
+  {
+    id: "aquascape",
+    title: "AquaScape Inspire",
+    year: "2024",
+    description:
+      "A Pinterest-style community platform for aquascaping hobbyists to share tank designs, discover hardscaping styles, and connect globally.",
+    tags: ["React", "Tailwind CSS", "Vercel"],
+    href: "https://aqi-orpin-three.vercel.app/",
+    img: aquascapeImg,
+  },
+  {
+    id: "kirtipur",
+    title: "Hamro Kirtipur",
+    year: "2024",
+    description:
+      "A community directory for Kirtipur, Nepal featuring 11 wards, an interactive Leaflet map, verified business listings, and emergency contacts.",
+    tags: ["Leaflet.js", "GeoJSON", "MERN"],
+    href: "https://hamro-kirtipur.vercel.app/",
+    img: kirtipur,
+  },
+  {
+    id: "khaiko",
+    title: "Khai Ko Imposter?",
+    year: "2022",
+    description:
+      "A Nepali social deduction party game built with React Native and Expo — pass-and-play on one phone, inspired by the social dynamics of Among Us.",
+    tags: ["React Native", "Expo", "UI/UX"],
+    href: "https://gilded-pixie-1986f9.netlify.app",
+    img: khaiKoImg,
+  },
+  {
+    id: "whistle",
+    title: "Cooker Whistle",
+    year: "2023",
+    description:
+      "A PWA that listens through the microphone, automatically counts pressure cooker whistles, and sounds an alarm when the cooking is done.",
+    tags: ["PWA", "Web Audio API", "React"],
+    href: "https://pressure-cooker-whistle.vercel.app/",
+    img: whistleImg,
+  },
+  {
+    id: "apple",
+    title: "Apple Animation",
+    year: "2023",
+    description:
+      "A visually stunning Apple-inspired scroll animation project featuring smooth transitions, sticky sections, and interactive UI elements built with modern web tech.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    href: "https://apple-animation-8zh8.vercel.app/",
+    img: appleImg,
+  },
+  {
+    id: "reebok",
+    title: "Reebok Web App",
+    year: "2022",
+    description:
+      "A React-based web application for Reebok featuring a dynamic product catalog, API-powered listings, and a sleek UI to enhance the shopping experience.",
+    tags: ["React", "CSS", "REST API"],
+    href: "#",
+    img: reebokImg,
+  },
+  {
+    id: "blackfriday",
+    title: "Black Friday Web",
+    year: "2022",
+    description:
+      "A promotional web platform for Black Friday sales offering real-time product deals, discount tracking, and a seamless shopping interface.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    href: "#",
+    img: blackImg,
+  },
+  {
+    id: "facebook",
+    title: "Facebook UI Clone",
+    year: "2021",
+    description:
+      "A front-end project replicating Facebook's user interface using HTML and CSS, showcasing modern layout techniques and responsive design.",
+    tags: ["HTML", "CSS"],
+    href: "#",
+    img: fbImg,
+  },
+  {
+    id: "calculator",
+    title: "Calculator App",
+    year: "2021",
+    description:
+      "A fully functional browser calculator built with vanilla JavaScript, featuring clean UI design and standard arithmetic operations.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    href: "#",
+    img: calcImg,
+  },
+];
+
+const INITIAL_COUNT = 6;
 
 const ProfileSection = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visible = showAll ? projects : projects.slice(0, INITIAL_COUNT);
+
   return (
-    <div className=" profileContainer">
-      <div className="profilePicrure"></div>
-      <div className="profilet1">
-        What makes me <br /> different?
-      </div>
-      <div className="profilet2">
-        I blend design and functionality to create impactful solutions, turning
-        ideas into reality and delivering exceptional user experiences.
-      </div>
-      <div>
-        <HireButton text="Download resume" href="/swornimWorkSample.pdf" />
-        <HireButton2 text="Browse my work" href="#projects" />
-        <Link to="/story" className="hireBtn2">My Story →</Link>
-      </div>
-      <div className="cardsFlex">
-        {/* fontend */}
-        <div className="frontendCard">
-          <h3>
-            Front-end
-            <br />
-            development
-          </h3>
-          <hr />
-          <br />
-          <div className="font">
-            Expert in HTML, CSS, React, and Vue, JavaScript, crafting
-            responsive, high-performance websites.
+    <>
+      {/* ── What makes me different ── */}
+      <section className="profile-section">
+
+        <ScrollTwirl as="div" className="profile-avatar-wrap" twistDir={0} threshold={0.12}>
+          <div className="profile-avatar">
+            <img src={profilePic} alt="Swornim Maharjan" />
           </div>
-          <div className="logoFlex">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-css3-plain colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-react-original colored"></i>
-            <i class="devicon-vuejs-plain colored"></i>
+          <div className="profile-verified">
+            <span className="material-symbols-outlined">verified</span>
           </div>
-        </div>
+        </ScrollTwirl>
 
-        {/* backend */}
-        <div className="frontendCard">
-          <h3>
-            Back-end
-            <br />
-            development
-          </h3>
-          <hr />
-          <br />
-          <div className="font">
-            Expert in Node.js, MongoDB, and NoSQL databases, building scalable,
-            high-performance backend systems.
-          </div>
-          <div className="logoFlex">
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-mongodb-plain colored"></i>
-            <i class="devicon-express-original colored"></i>
-          </div>
-        </div>
-      </div>
-      <div>
-        <h1>Showcasing my work</h1>
-        <div>
-          <div class="showcase-container">
-            <h2 class="showcase-title">Showcase of Projects</h2>
-            <div class="project-grid">
-              <a
-                href="https://kyoudaihostel.com/"
-                class="project-card kyoudai-hostel"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Kyoudai Hostel</h3>
-                  <p>
-                    A full-stack hostel management web application built to
-                    streamline bookings and hostel operations.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://cafehubs.vercel.app/"
-                class="project-card cafe-hub"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Cafe Hub</h3>
-                  <p>
-                    A MERN stack cafe management app featuring authentication,
-                    staff roster management, and stock tracking.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://aqi-a0eyukdil-swornims-projects-64c7c01e.vercel.app/"
-                class="project-card aquascape-inspire"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>AquaScape Inspire</h3>
-                  <p>
-                    A Pinterest-style community platform for aquascaping hobbyists — share tanks, discover styles, and connect with fellow aquascapers.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://hamro-kirtipur.vercel.app/"
-                class="project-card hamro-kirtipur"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Hamro Kirtipur</h3>
-                  <p>
-                    A MERN stack community directory for Kirtipur, Nepal — 11 wards, interactive map, business listings, and emergency contacts.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://gilded-pixie-1986f9.netlify.app"
-                class="project-card khai-ko-imposter"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Khai Ko Imposter?</h3>
-                  <p>
-                    A Nepali social deduction party game built with React Native
-                    and Expo — pass-and-play on one phone, inspired by Among Us.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://pressure-cooker-whistle.vercel.app/"
-                class="project-card whistle-counter"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Cooker Whistle</h3>
-                  <p>
-                    A PWA that listens through the mic, counts pressure cooker
-                    whistles automatically, and sounds an alarm when done.
-                  </p>
-                </div>
-              </a>
-              <a
-                href="https://apple-animation-8zh8.vercel.app/"
-                class="project-card apple-animation"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Apple Animation</h3>
-                  <p>
-                    A visually stunning Apple-inspired animation project built
-                    with modern web technologies, featuring smooth transitions
-                    and interactive UI elements.
-                  </p>
-                </div>
-              </a>
+        <ScrollTwirl as="h1" className="profile-heading" twistDir={1} threshold={0.12}>
+          What makes me different?
+        </ScrollTwirl>
 
-              <a href="https://" class="project-card news-app" target="_blank">
-                <div class="project-info">
-                  <h3>Reebok Web Application</h3>
-                  <p>
-                    A React-based web application for Reebok, featuring a
-                    dynamic product catalog, API-powered product listings, and a
-                    sleek UI to enhance the shopping experience.
-                  </p>
-                </div>
-              </a>
+        <ScrollTwirl as="p" className="profile-description" twistDir={-1} threshold={0.12}>
+          I blend design and functionality to create impactful solutions, turning
+          ideas into reality and delivering exceptional user experiences through
+          technical mastery and artistic precision.
+        </ScrollTwirl>
 
-              <a
-                href="https://"
-                class="project-card contact-manager"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Black Friday Web</h3>
-                  <p>
-                    A promotional web platform for Black Friday sales, offering
-                    real-time product deals, discount tracking, and a seamless
-                    shopping interface.
-                  </p>
-                </div>
-              </a>
+        <ScrollTwirl as="div" className="profile-buttons" twistDir={1} threshold={0.12}>
+          <a
+            href="/swornimWorkSample.pdf"
+            className="btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="material-symbols-outlined">download</span>
+            Download resume
+          </a>
+          <a href="#projects" className="btn-glass">Browse my work</a>
+          <Link to="/story" className="btn-text">
+            My Story <span>→</span>
+          </Link>
+        </ScrollTwirl>
 
-              <a
-                href="https://"
-                class="project-card expense-tracker"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Facebook User Interface using CSS</h3>
-                  <p>
-                    A front-end project replicating Facebook's UI using HTML and
-                    CSS, designed to showcase modern styling techniques and
-                    responsive layouts.
-                  </p>
-                </div>
-              </a>
-
-              <a
-                href="https://"
-                class="project-card calc-tracker"
-                target="_blank"
-              >
-                <div class="project-info">
-                  <h3>Calculator Interface using JS</h3>
-                  <p>
-                    A front-end project using HTML and CSS, designed to showcase
-                    modern styling techniques and responsive layouts.
-                  </p>
-                </div>
-              </a>
+        {/* ── Skill cards — left twists left, right twists right ── */}
+        <div className="skills-grid">
+          <ScrollTwirl as="div" className="glass-card skill-card" twistDir={-1} threshold={0.12}>
+            <div className="skill-card-header">
+              <div className="skill-icon">
+                <span className="material-symbols-outlined">code</span>
+              </div>
+              <h3>Front-end development</h3>
             </div>
-            <button class="show-more-btn" onclick="showMoreProjects()">
-              Show More
+            <hr className="skill-divider" />
+            <p>
+              Expert in HTML, CSS, React, and Vue, JavaScript, crafting
+              responsive, high-performance websites with a keen eye for aesthetic
+              consistency and interactive fluidity.
+            </p>
+            <div className="skill-stack-row">
+              <span className="stack-label">Stack</span>
+              <div className="skill-icons">
+                <i className="devicon-html5-plain colored" title="HTML5"></i>
+                <i className="devicon-css3-plain colored" title="CSS3"></i>
+                <i className="devicon-javascript-plain colored" title="JavaScript"></i>
+                <i className="devicon-react-original colored" title="React"></i>
+                <i className="devicon-vuejs-plain colored" title="Vue.js"></i>
+              </div>
+            </div>
+          </ScrollTwirl>
+
+          <ScrollTwirl as="div" className="glass-card skill-card" twistDir={1} threshold={0.12}>
+            <div className="skill-card-header">
+              <div className="skill-icon skill-icon-secondary">
+                <span className="material-symbols-outlined">terminal</span>
+              </div>
+              <h3>Back-end development</h3>
+            </div>
+            <hr className="skill-divider" />
+            <p>
+              Expert in Node.js, MongoDB, and NoSQL databases, building
+              scalable, high-performance backend systems with robust security and
+              efficient data architecture.
+            </p>
+            <div className="skill-stack-row">
+              <span className="stack-label">Stack</span>
+              <div className="skill-icons">
+                <i className="devicon-nodejs-plain colored" title="Node.js"></i>
+                <i className="devicon-mongodb-plain colored" title="MongoDB"></i>
+                <i className="devicon-express-original colored" title="Express"></i>
+              </div>
+            </div>
+          </ScrollTwirl>
+        </div>
+      </section>
+
+      {/* ── Projects showcase ── */}
+      <section className="projects-section" id="projects">
+
+        {/* Section header — each line exits independently */}
+        <div className="projects-header">
+          <ScrollTwirl as="div" className="section-badge" twistDir={1} threshold={0.12}>
+            Portfolio Showcase
+          </ScrollTwirl>
+          <ScrollTwirl as="h2" className="projects-title" twistDir={-1} threshold={0.12}>
+            Showcase of Projects
+          </ScrollTwirl>
+          <ScrollTwirl as="p" className="projects-subtitle" twistDir={1} threshold={0.12}>
+            A selection of digital products, experiments, and technical
+            deep-dives focused on user-centric design and robust performance.
+          </ScrollTwirl>
+        </div>
+
+        <div className="project-grid-new">
+          {visible.map((proj, i) => (
+            // ScrollTwirl renders as <a> — becomes the grid item directly
+            <ScrollTwirl
+              key={proj.id}
+              as="a"
+              href={proj.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card-new glass-card"
+              twistDir={i % 2 === 0 ? -1 : 1}
+                         >
+              <div className="project-img-wrap">
+                <img src={proj.img} alt={proj.title} />
+                <div className="project-img-overlay" />
+              </div>
+              <div className="project-card-body">
+                <div className="project-card-meta">
+                  <h3>{proj.title}</h3>
+                  <span className="project-year">{proj.year}</span>
+                </div>
+                <p>{proj.description}</p>
+                <div className="project-tags">
+                  {proj.tags.map((tag) => (
+                    <span key={tag} className="project-tag">{tag}</span>
+                  ))}
+                </div>
+              </div>
+            </ScrollTwirl>
+          ))}
+        </div>
+
+        {!showAll && (
+          <div className="show-more-wrap">
+            <button className="btn-primary" onClick={() => setShowAll(true)}>
+              Show More Projects
+              <span className="material-symbols-outlined">arrow_downward</span>
             </button>
           </div>
-        </div>
-      </div>
-    </div>
+        )}
+      </section>
+    </>
   );
 };
 
