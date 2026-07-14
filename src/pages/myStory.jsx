@@ -66,6 +66,15 @@ const projects = [
     url: null,
   },
   {
+    builtFor: "My Heritage",
+    name: "Mukhauta",
+    why: "I wanted to bring the sacred masks of Newar culture — the ones I grew up seeing at festivals — online.",
+    story:
+      "Mukhauta means mask in Nepali. I built a showcase of Nepal's sacred Newar masks — from Bhairab to Buddha, from the Living Goddess to the Demon of the Streets — as a way to document and share a part of my culture that most people outside Nepal never get to see.",
+    stack: ["React", "Vite"],
+    url: "https://mukut-nine.vercel.app/",
+  },
+  {
     builtFor: "A Challenge I Set Myself",
     name: "Apple Animation",
     why: "I was at JB Hi-Fi and saw a MacBook display running Apple's animation. I had to recreate it.",

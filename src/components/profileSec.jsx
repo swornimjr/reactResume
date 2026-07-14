@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import HireButton, { HireButton2 } from "./button";
+import { HireButton2 } from "./button";
 
 const ProfileSection = () => {
   return (
@@ -13,7 +13,6 @@ const ProfileSection = () => {
         ideas into reality and delivering exceptional user experiences.
       </div>
       <div>
-        <HireButton text="Download resume" href="/swornimWorkSample.pdf" />
         <HireButton2 text="Browse my work" href="#projects" />
         <Link to="/story" className="hireBtn2">My Story →</Link>
       </div>
@@ -142,6 +141,20 @@ const ProfileSection = () => {
                   </p>
                 </div>
               </a>
+              <a
+                href="https://mukut-nine.vercel.app/"
+                class="project-card mukhauta"
+                target="_blank"
+              >
+                <div class="project-info">
+                  <h3>Mukhauta</h3>
+                  <p>
+                    A React showcase of Nepal's sacred Newar masks — gods,
+                    demons, and the divine, from Bhairab to Buddha.
+                  </p>
+                </div>
+              </a>
+
               <a
                 href="https://apple-animation-8zh8.vercel.app/"
                 class="project-card apple-animation"
